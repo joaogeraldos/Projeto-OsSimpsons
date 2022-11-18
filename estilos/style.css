@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Simpsonfont';
+    src: url(../fontes/Simpsonfont\ DEMO.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background: blue url(../imagens/background.jpg) top center no-repeat fixed;
+    background-size: cover;
+    height: 97%;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    width: 97vw;
+    height: 99%;
+    margin: 1% auto;
+    background-image: linear-gradient(to bottom, #0caad12d, transparent, #0caad12f);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+header img {
+    width: 70px;
+    margin-left: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+header a{
+    padding: 0;
+    margin: 0;
+}
+
+menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+menu ul li a {
+    margin: 0 10px;
+    padding-bottom: 0;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    width: 50vw;
+    padding: 0px 10px 10px 40px;
+    margin-top: 0;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    
+}
+
+main h1 {
+    font-family: 'Simpsonfont';
+    font-size: 3em;
+    margin-left: 80px;
+    color:  #F2BE22;
+    margin-bottom: 0;
+    text-shadow: 0px 3px 2px black;
+}
+
+h1#h1baixo{
+    position: absolute;
+    margin-left: 35px;
+    top: 20%;
+}
+main p {
+    padding: 9% 0 10px;
+    margin: 10px 0;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    
+}
+.formulario {
+   position: relative;
+}
+.formulario  input{
+    
+    margin: 8px 0 5px 40px;
+    width: 30vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    padding: 13px;
+}
+
+#usuario {
+    position: absolute;
+    top: 4%;
+    width: 25px;
+    margin-top: 8px;
+    padding: 0;
+}
+#senha {
+    position: absolute;
+    bottom: 47%;
+    width: 30px;
+    left: -3px;
+    margin-top: 8px;
+    padding: 0;
+}
+.formulario .botao {
+    background-color: #F2BE22;
+    width: 8vw;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top: 30px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.formulario .botao:hover {
+    background-color: #0CA8D1;
+    color: black;
+    cursor: pointer;
+}
+.image img {
+    width: 330px;
+    position: absolute;
+    left: 64%;
+    bottom: 0;
+    z-index: 0;
+}
+
+aside {
+    position: absolute;
+    bottom: 15px;
+    left: 15%;
+    font-size: 0.95em;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.redes a img{
+    width: 25px;
+    position: relative;
+    left: 47vw;
+    top: 20vh;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+.redes a img:hover {
+    transition-duration: .4s;
+    transform: scale(1.5);
+}
